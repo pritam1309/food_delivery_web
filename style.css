@@ -1,0 +1,377 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* css variable */
+:root{
+    --navbar-height: 10px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+#navbar ul li {
+    /* color: white; */
+    list-style: none; /*ul se styling hatane ke liye */
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 2px 22px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+/* navbar list styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+/* #navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+} */
+/* logo and image */
+#logo{
+    margin: 19px 34px;
+}
+#logo img {
+    margin: 7px 9px;
+    height: 65px;
+    filter: invert(1);
+}
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    font-family: 'Bree Serif', serif;
+    
+}
+#home::before{
+    content: "";
+    background: url('../food_delivery/image/food.jpg') no-repeat center center/cover;
+    opacity: 0.99;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+/* utility class */
+.h_primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    margin: 20px;
+}
+.h-secoundary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgba(222, 184, 135, 0.744);
+    background-color: rgb(229, 154, 16);
+    color: white;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all;
+    transition-timing-function: ease-out;
+    transition-duration: 4s;
+}
+.btn:hover{
+    background-color: rgb(234, 176, 70);
+    border: 2px solid rgba(91, 76, 56, 0.744);
+    border-radius: 40px;
+}
+/* services section */
+#services{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 40px;
+    font-family: 'Baloo 2', cursive;
+    
+}
+#services .box{
+    
+    border: 2px solid brown;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 23px;
+    background-color: rgb(247, 208, 208);
+    
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+#services div p{
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+}
+/* submit button */
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    border: 2px solid brown;
+    height: 30px;
+    width: 250px;
+    border-radius: 12px;
+    font: 1.3rem;
+    padding: 15px;
+    margin: 12px;
+    text-align:left;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-family: 'Bree Serif', serif;
+}
+.searchbtn{
+    background-color: rgb(196, 68, 68);
+    border: 2px solid brown;
+    height: 20px;
+    width: 50px;
+    margin: 12px;
+    padding: 15px;
+    text-align: center;
+    float: right;
+    border-radius: 2px 12px 12px 2px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: context-menu;
+}
+.searchimage{
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    top: 25px;
+    right: 35px;
+    filter: invert(1);
+}
+.searchimage:hover{
+    filter:invert(0);
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menucard{
+    text-align: center;
+}
+.h_last{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.menu{
+    border: 2px solid goldenrod;
+    border-radius: 23px;
+    width: 300px;
+    height: 390px;
+    margin: 20px;
+    padding: 10px;
+}
+.menu li{
+    list-style: none;
+    /* float: left; */
+    font-size: 1.2rem;
+    font-weight:bold;
+    display: inline;
+    /* margin: 10px; */
+    padding: 10px;
+    text-align: center;
+}
+.menu p{
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.viewall{
+    text-decoration: none;
+    text-align: right;
+    color: goldenrod;
+}
+.check{
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid brown;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: white;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.switch{
+    border-radius: 20px;
+    border: 2px solid brown;
+    margin : 5px;
+    padding: 5px; 
+    background-color: brown;
+}
+
+.slider
+{
+    color: white;
+    margin: 2px 4px 6px 0px;
+}
+.ordering {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.form{
+    background: url('food.jpeg') no-repeat center center/cover;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px;
+    height: 300px;
+    width: 300px;
+}
+.form:hover{
+    border-color: rgb(194, 122, 122);
+}
+.short{
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    height: 10px;
+    border: 2px solid rgb(223, 75, 75);
+    border-radius: 15px;
+    background-color: rgb(244, 225, 225);
+    cursor: pointer;
+}
+.long{
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    height: 10px;
+    border: 2px solid rgb(223, 75, 75);
+    border-radius: 15px;
+    background-color: rgb(244, 225, 225);
+    cursor: pointer;
+}
+.submit{
+    height: 30px;
+    width: 60px;
+    margin: 15px;
+    border-radius: 15px;
+    color: white;
+    background-color: brown;
+    border: 2px solid brown;
+}
+.contact{
+    background-color: rgb(245, 210, 210);
+    height: 100%;
+    width: auto;
+}
+.media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+}
+.instagram{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid brown;
+    background-color: brown;
+    border-radius: 20px;
+}
+.instagram a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+.instagram:hover{
+    
+    background-color:  rgb(245, 210, 210);
+    border: 2px solid rgb(86, 44, 44);
+}
+.instagram a:hover{
+    color: brown;
+}
+.facebook{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid brown;
+    background-color: brown;
+    border-radius: 20px;
+}
+.facebook a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+.facebook:hover{
+    border: 2px solid rgb(86, 44, 44);
+    background-color:  rgb(245, 210, 210);
+}
+.facebook a:hover{
+    color: brown;
+}
+.twitter{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid brown;
+    background-color: brown;
+    border-radius: 20px;
+}
+.twitter a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+.twitter:hover{
+    border: 2px solid rgb(86, 44, 44);
+    background-color:  rgb(245, 210, 210);
+}
+.twitter a:hover{
+    color: brown;
+}
+.tollnumber{
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
